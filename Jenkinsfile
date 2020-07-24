@@ -45,16 +45,16 @@ pipeline {
     stage('Static Code Analysis') {
       steps{
         echo '------------>Análisis de código estático<------------'
-        withSonarQubeEnv('Sonar') {
-          sh "${tool name: 'SonarScanner', type:'hudson.plugins.sonar.SonarRunnerInstallation'}/bin/sonar-scanner -Dproject.settings=sonar-project.properties"
-        }
+        // withSonarQubeEnv('Sonar') {
+        //  sh "${tool name: 'SonarScanner', type:'hudson.plugins.sonar.SonarRunnerInstallation'}/bin/sonar-scanner -Dproject.settings=sonar-project.properties"
+        // }
       }
     }
 
     stage('Build') {
       steps {
         echo "------------>Build<------------"
-        sh 'xcodebuild -scheme "CeibaUser" -configuration "Debug" build test -destination "platform=iOS Simulator, name=iPhone 6,OS=10.1" -enableCodeCoverage YES | /usr/local/bin/xcpretty -r junit'
+        // sh 'xcodebuild -scheme "CeibaUser" -configuration "Debug" build test -destination "platform=iOS Simulator, name=iPhone 6,OS=10.1" -enableCodeCoverage YES | /usr/local/bin/xcpretty -r junit'
       }
     }  
   }
