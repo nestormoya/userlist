@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB7C00DF241DEBAA001441BD /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C00DE241DEBAA001441BD /* UserTableViewCell.swift */; };
+		FB7C00E1241ED2C6001441BD /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C00E0241ED2C6001441BD /* PostTableViewCell.swift */; };
+		FBD7E585241575460032FCF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E584241575460032FCF4 /* AppDelegate.swift */; };
+		FBD7E587241575460032FCF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E586241575460032FCF4 /* SceneDelegate.swift */; };
+		FBD7E58F241575460032FCF4 /* CeibaUser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E58D241575460032FCF4 /* CeibaUser.xcdatamodeld */; };
+		FBD7E591241575480032FCF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD7E590241575480032FCF4 /* Assets.xcassets */; };
+		FBD7E594241575480032FCF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD7E592241575480032FCF4 /* LaunchScreen.storyboard */; };
+		FBD7E59F241575480032FCF4 /* CeibaUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E59E241575480032FCF4 /* CeibaUserTests.swift */; };
+		FBD7E5AA241575480032FCF4 /* CeibaUserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E5A9241575480032FCF4 /* CeibaUserUITests.swift */; };
+		FBD7E5B8241575E30032FCF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD7E5B7241575E30032FCF4 /* Main.storyboard */; };
+		FBD7E5BB2415761F0032FCF4 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E5BA2415761F0032FCF4 /* UserListViewController.swift */; };
+		FBD7E5BF24157AB10032FCF4 /* UserListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E5BE24157AB10032FCF4 /* UserListProtocol.swift */; };
+		FBD7E5C224157B480032FCF4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E5C124157B480032FCF4 /* User.swift */; };
+		FBD7E5C424157C820032FCF4 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E5C324157C820032FCF4 /* Address.swift */; };
+		FBD7E5C624157E090032FCF4 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E5C524157E090032FCF4 /* Company.swift */; };
+		FBD7E5CC2415866C0032FCF4 /* UserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E5CB2415866C0032FCF4 /* UserListPresenter.swift */; };
+		FBD7E5CF241588F70032FCF4 /* UserListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E5CE241588F70032FCF4 /* UserListInteractor.swift */; };
+		FBD7E5D424158AA70032FCF4 /* UserListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E5D324158AA70032FCF4 /* UserListWireframe.swift */; };
+		FBD7E5D72415D38E0032FCF4 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E5D62415D38E0032FCF4 /* UserDetailViewController.swift */; };
+		FBD7E5DB2415D7A50032FCF4 /* UserDetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E5DA2415D7A50032FCF4 /* UserDetailWireframe.swift */; };
+		FBD7E5DE2415D8250032FCF4 /* UserDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E5DD2415D8250032FCF4 /* UserDetailProtocols.swift */; };
+		FBD7E5E12415D87F0032FCF4 /* UserDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E5E02415D87F0032FCF4 /* UserDetailPresenter.swift */; };
+		FBD7E5E42416D7580032FCF4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E5E32416D7580032FCF4 /* Post.swift */; };
+		FBD7E5EF241743F60032FCF4 /* UserModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E5EE241743F60032FCF4 /* UserModule.swift */; };
+		FBD7E5F1241744830032FCF4 /* PostModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E5F0241744830032FCF4 /* PostModule.swift */; };
+		FBD7E5F4241748EA0032FCF4 /* UserDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E5F3241748EA0032FCF4 /* UserDetailInteractor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBD7E59B241575480032FCF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBD7E579241575460032FCF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBD7E580241575460032FCF4;
+			remoteInfo = CeibaUser;
+		};
+		FBD7E5A6241575480032FCF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBD7E579241575460032FCF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBD7E580241575460032FCF4;
+			remoteInfo = CeibaUser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB7C00DE241DEBAA001441BD /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		FB7C00E0241ED2C6001441BD /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		FBD7E581241575460032FCF4 /* CeibaUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CeibaUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD7E584241575460032FCF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBD7E586241575460032FCF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FBD7E58E241575460032FCF4 /* CeibaUser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CeibaUser.xcdatamodel; sourceTree = "<group>"; };
+		FBD7E590241575480032FCF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBD7E593241575480032FCF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBD7E595241575480032FCF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD7E59A241575480032FCF4 /* CeibaUserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CeibaUserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD7E59E241575480032FCF4 /* CeibaUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeibaUserTests.swift; sourceTree = "<group>"; };
+		FBD7E5A0241575480032FCF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD7E5A5241575480032FCF4 /* CeibaUserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CeibaUserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD7E5A9241575480032FCF4 /* CeibaUserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeibaUserUITests.swift; sourceTree = "<group>"; };
+		FBD7E5AB241575480032FCF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD7E5B7241575E30032FCF4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FBD7E5BA2415761F0032FCF4 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		FBD7E5BE24157AB10032FCF4 /* UserListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListProtocol.swift; sourceTree = "<group>"; };
+		FBD7E5C124157B480032FCF4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FBD7E5C324157C820032FCF4 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		FBD7E5C524157E090032FCF4 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		FBD7E5CB2415866C0032FCF4 /* UserListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListPresenter.swift; sourceTree = "<group>"; };
+		FBD7E5CE241588F70032FCF4 /* UserListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListInteractor.swift; sourceTree = "<group>"; };
+		FBD7E5D324158AA70032FCF4 /* UserListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListWireframe.swift; sourceTree = "<group>"; };
+		FBD7E5D62415D38E0032FCF4 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		FBD7E5DA2415D7A50032FCF4 /* UserDetailWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailWireframe.swift; sourceTree = "<group>"; };
+		FBD7E5DD2415D8250032FCF4 /* UserDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailProtocols.swift; sourceTree = "<group>"; };
+		FBD7E5E02415D87F0032FCF4 /* UserDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailPresenter.swift; sourceTree = "<group>"; };
+		FBD7E5E32416D7580032FCF4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FBD7E5EE241743F60032FCF4 /* UserModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModule.swift; sourceTree = "<group>"; };
+		FBD7E5F0241744830032FCF4 /* PostModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModule.swift; sourceTree = "<group>"; };
+		FBD7E5F3241748EA0032FCF4 /* UserDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailInteractor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBD7E57E241575460032FCF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD7E597241575480032FCF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD7E5A2241575480032FCF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBD7E578241575460032FCF4 = {
+			isa = PBXGroup;
+			children = (
+				FBD7E583241575460032FCF4 /* CeibaUser */,
+				FBD7E59D241575480032FCF4 /* CeibaUserTests */,
+				FBD7E5A8241575480032FCF4 /* CeibaUserUITests */,
+				FBD7E582241575460032FCF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBD7E582241575460032FCF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7E581241575460032FCF4 /* CeibaUser.app */,
+				FBD7E59A241575480032FCF4 /* CeibaUserTests.xctest */,
+				FBD7E5A5241575480032FCF4 /* CeibaUserUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBD7E583241575460032FCF4 /* CeibaUser */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7E5C7241586210032FCF4 /* Core */,
+				FBD7E5D52415D3670032FCF4 /* UserDetail */,
+				FBD7E5B9241576040032FCF4 /* UserList */,
+				FBD7E584241575460032FCF4 /* AppDelegate.swift */,
+				FBD7E586241575460032FCF4 /* SceneDelegate.swift */,
+				FBD7E5B7241575E30032FCF4 /* Main.storyboard */,
+				FBD7E590241575480032FCF4 /* Assets.xcassets */,
+				FBD7E592241575480032FCF4 /* LaunchScreen.storyboard */,
+				FBD7E595241575480032FCF4 /* Info.plist */,
+				FBD7E58D241575460032FCF4 /* CeibaUser.xcdatamodeld */,
+			);
+			path = CeibaUser;
+			sourceTree = "<group>";
+		};
+		FBD7E59D241575480032FCF4 /* CeibaUserTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7E59E241575480032FCF4 /* CeibaUserTests.swift */,
+				FBD7E5A0241575480032FCF4 /* Info.plist */,
+			);
+			path = CeibaUserTests;
+			sourceTree = "<group>";
+		};
+		FBD7E5A8241575480032FCF4 /* CeibaUserUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7E5A9241575480032FCF4 /* CeibaUserUITests.swift */,
+				FBD7E5AB241575480032FCF4 /* Info.plist */,
+			);
+			path = CeibaUserUITests;
+			sourceTree = "<group>";
+		};
+		FBD7E5B9241576040032FCF4 /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7E5D224158A6F0032FCF4 /* WireFrame */,
+				FBD7E5BC24157A480032FCF4 /* View */,
+				FBD7E5CD241588D70032FCF4 /* Interactor */,
+				FBD7E5CA241586550032FCF4 /* Presenter */,
+				FBD7E5C024157B2F0032FCF4 /* Entity */,
+				FBD7E5BD24157A6C0032FCF4 /* Protocol */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		FBD7E5BC24157A480032FCF4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7E5BA2415761F0032FCF4 /* UserListViewController.swift */,
+				FB7C00DE241DEBAA001441BD /* UserTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FBD7E5BD24157A6C0032FCF4 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7E5BE24157AB10032FCF4 /* UserListProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		FBD7E5C024157B2F0032FCF4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7E5C124157B480032FCF4 /* User.swift */,
+				FBD7E5C324157C820032FCF4 /* Address.swift */,
+				FBD7E5C524157E090032FCF4 /* Company.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FBD7E5C7241586210032FCF4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7E5EE241743F60032FCF4 /* UserModule.swift */,
+				FBD7E5F0241744830032FCF4 /* PostModule.swift */,
+			);
+			name = Core;
+			path = UserList/Core;
+			sourceTree = "<group>";
+		};
+		FBD7E5CA241586550032FCF4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7E5CB2415866C0032FCF4 /* UserListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FBD7E5CD241588D70032FCF4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7E5CE241588F70032FCF4 /* UserListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FBD7E5D224158A6F0032FCF4 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7E5D324158AA70032FCF4 /* UserListWireframe.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		FBD7E5D52415D3670032FCF4 /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7E5F2241748C80032FCF4 /* Interactor */,
+				FBD7E5E22416D74A0032FCF4 /* Entity */,
+				FBD7E5DF2415D85D0032FCF4 /* Presenter */,
+				FBD7E5DC2415D7F90032FCF4 /* Protocol */,
+				FBD7E5D92415D7670032FCF4 /* WireFrame */,
+				FBD7E5D82415D3990032FCF4 /* View */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
+		FBD7E5D82415D3990032FCF4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7E5D62415D38E0032FCF4 /* UserDetailViewController.swift */,
+				FB7C00E0241ED2C6001441BD /* PostTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FBD7E5D92415D7670032FCF4 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7E5DA2415D7A50032FCF4 /* UserDetailWireframe.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		FBD7E5DC2415D7F90032FCF4 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7E5DD2415D8250032FCF4 /* UserDetailProtocols.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		FBD7E5DF2415D85D0032FCF4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7E5E02415D87F0032FCF4 /* UserDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FBD7E5E22416D74A0032FCF4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7E5E32416D7580032FCF4 /* Post.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FBD7E5F2241748C80032FCF4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7E5F3241748EA0032FCF4 /* UserDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBD7E580241575460032FCF4 /* CeibaUser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBD7E5AE241575480032FCF4 /* Build configuration list for PBXNativeTarget "CeibaUser" */;
+			buildPhases = (
+				FBD7E57D241575460032FCF4 /* Sources */,
+				FBD7E57E241575460032FCF4 /* Frameworks */,
+				FBD7E57F241575460032FCF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CeibaUser;
+			productName = CeibaUser;
+			productReference = FBD7E581241575460032FCF4 /* CeibaUser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBD7E599241575480032FCF4 /* CeibaUserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBD7E5B1241575480032FCF4 /* Build configuration list for PBXNativeTarget "CeibaUserTests" */;
+			buildPhases = (
+				FBD7E596241575480032FCF4 /* Sources */,
+				FBD7E597241575480032FCF4 /* Frameworks */,
+				FBD7E598241575480032FCF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBD7E59C241575480032FCF4 /* PBXTargetDependency */,
+			);
+			name = CeibaUserTests;
+			productName = CeibaUserTests;
+			productReference = FBD7E59A241575480032FCF4 /* CeibaUserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBD7E5A4241575480032FCF4 /* CeibaUserUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBD7E5B4241575480032FCF4 /* Build configuration list for PBXNativeTarget "CeibaUserUITests" */;
+			buildPhases = (
+				FBD7E5A1241575480032FCF4 /* Sources */,
+				FBD7E5A2241575480032FCF4 /* Frameworks */,
+				FBD7E5A3241575480032FCF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBD7E5A7241575480032FCF4 /* PBXTargetDependency */,
+			);
+			name = CeibaUserUITests;
+			productName = CeibaUserUITests;
+			productReference = FBD7E5A5241575480032FCF4 /* CeibaUserUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBD7E579241575460032FCF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Nestor Moya Yepes";
+				TargetAttributes = {
+					FBD7E580241575460032FCF4 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					FBD7E599241575480032FCF4 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = FBD7E580241575460032FCF4;
+					};
+					FBD7E5A4241575480032FCF4 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = FBD7E580241575460032FCF4;
+					};
+				};
+			};
+			buildConfigurationList = FBD7E57C241575460032FCF4 /* Build configuration list for PBXProject "CeibaUser" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBD7E578241575460032FCF4;
+			productRefGroup = FBD7E582241575460032FCF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBD7E580241575460032FCF4 /* CeibaUser */,
+				FBD7E599241575480032FCF4 /* CeibaUserTests */,
+				FBD7E5A4241575480032FCF4 /* CeibaUserUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBD7E57F241575460032FCF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD7E5B8241575E30032FCF4 /* Main.storyboard in Resources */,
+				FBD7E594241575480032FCF4 /* LaunchScreen.storyboard in Resources */,
+				FBD7E591241575480032FCF4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD7E598241575480032FCF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD7E5A3241575480032FCF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBD7E57D241575460032FCF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD7E5D72415D38E0032FCF4 /* UserDetailViewController.swift in Sources */,
+				FB7C00DF241DEBAA001441BD /* UserTableViewCell.swift in Sources */,
+				FBD7E5BF24157AB10032FCF4 /* UserListProtocol.swift in Sources */,
+				FBD7E5CF241588F70032FCF4 /* UserListInteractor.swift in Sources */,
+				FBD7E5BB2415761F0032FCF4 /* UserListViewController.swift in Sources */,
+				FBD7E5C224157B480032FCF4 /* User.swift in Sources */,
+				FBD7E5F1241744830032FCF4 /* PostModule.swift in Sources */,
+				FBD7E5CC2415866C0032FCF4 /* UserListPresenter.swift in Sources */,
+				FBD7E58F241575460032FCF4 /* CeibaUser.xcdatamodeld in Sources */,
+				FBD7E585241575460032FCF4 /* AppDelegate.swift in Sources */,
+				FBD7E587241575460032FCF4 /* SceneDelegate.swift in Sources */,
+				FBD7E5C424157C820032FCF4 /* Address.swift in Sources */,
+				FBD7E5EF241743F60032FCF4 /* UserModule.swift in Sources */,
+				FBD7E5E12415D87F0032FCF4 /* UserDetailPresenter.swift in Sources */,
+				FB7C00E1241ED2C6001441BD /* PostTableViewCell.swift in Sources */,
+				FBD7E5DE2415D8250032FCF4 /* UserDetailProtocols.swift in Sources */,
+				FBD7E5C624157E090032FCF4 /* Company.swift in Sources */,
+				FBD7E5E42416D7580032FCF4 /* Post.swift in Sources */,
+				FBD7E5D424158AA70032FCF4 /* UserListWireframe.swift in Sources */,
+				FBD7E5F4241748EA0032FCF4 /* UserDetailInteractor.swift in Sources */,
+				FBD7E5DB2415D7A50032FCF4 /* UserDetailWireframe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD7E596241575480032FCF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD7E59F241575480032FCF4 /* CeibaUserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD7E5A1241575480032FCF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD7E5AA241575480032FCF4 /* CeibaUserUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBD7E59C241575480032FCF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBD7E580241575460032FCF4 /* CeibaUser */;
+			targetProxy = FBD7E59B241575480032FCF4 /* PBXContainerItemProxy */;
+		};
+		FBD7E5A7241575480032FCF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBD7E580241575460032FCF4 /* CeibaUser */;
+			targetProxy = FBD7E5A6241575480032FCF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBD7E592241575480032FCF4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBD7E593241575480032FCF4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBD7E5AC241575480032FCF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBD7E5AD241575480032FCF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBD7E5AF241575480032FCF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8KFQE59AQE;
+				INFOPLIST_FILE = CeibaUser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appNeox.CeibaUser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBD7E5B0241575480032FCF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8KFQE59AQE;
+				INFOPLIST_FILE = CeibaUser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appNeox.CeibaUser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FBD7E5B2241575480032FCF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8KFQE59AQE;
+				INFOPLIST_FILE = CeibaUserTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appNeox.CeibaUserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CeibaUser.app/CeibaUser";
+			};
+			name = Debug;
+		};
+		FBD7E5B3241575480032FCF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8KFQE59AQE;
+				INFOPLIST_FILE = CeibaUserTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appNeox.CeibaUserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CeibaUser.app/CeibaUser";
+			};
+			name = Release;
+		};
+		FBD7E5B5241575480032FCF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8KFQE59AQE;
+				INFOPLIST_FILE = CeibaUserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appNeox.CeibaUserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CeibaUser;
+			};
+			name = Debug;
+		};
+		FBD7E5B6241575480032FCF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8KFQE59AQE;
+				INFOPLIST_FILE = CeibaUserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appNeox.CeibaUserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CeibaUser;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBD7E57C241575460032FCF4 /* Build configuration list for PBXProject "CeibaUser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD7E5AC241575480032FCF4 /* Debug */,
+				FBD7E5AD241575480032FCF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBD7E5AE241575480032FCF4 /* Build configuration list for PBXNativeTarget "CeibaUser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD7E5AF241575480032FCF4 /* Debug */,
+				FBD7E5B0241575480032FCF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBD7E5B1241575480032FCF4 /* Build configuration list for PBXNativeTarget "CeibaUserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD7E5B2241575480032FCF4 /* Debug */,
+				FBD7E5B3241575480032FCF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBD7E5B4241575480032FCF4 /* Build configuration list for PBXNativeTarget "CeibaUserUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD7E5B5241575480032FCF4 /* Debug */,
+				FBD7E5B6241575480032FCF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FBD7E58D241575460032FCF4 /* CeibaUser.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FBD7E58E241575460032FCF4 /* CeibaUser.xcdatamodel */,
+			);
+			currentVersion = FBD7E58E241575460032FCF4 /* CeibaUser.xcdatamodel */;
+			path = CeibaUser.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FBD7E579241575460032FCF4 /* Project object */;
+}

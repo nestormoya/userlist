@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AddressCeiba" representedClassName="AddressCeiba" syncable="YES" codeGenerationType="class">
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="geo" optional="YES" attributeType="String"/>
+        <attribute name="street" optional="YES" attributeType="String"/>
+        <attribute name="suite" optional="YES" attributeType="String"/>
+        <attribute name="zipcode" optional="YES" attributeType="String"/>
+        <relationship name="rel_user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserCeiba" inverseName="rel_address" inverseEntity="UserCeiba"/>
+    </entity>
+    <entity name="CompanyCeiba" representedClassName="CompanyCeiba" syncable="YES" codeGenerationType="class">
+        <attribute name="bs" optional="YES" attributeType="String"/>
+        <attribute name="catchPhrase" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="rel_company" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserCeiba" inverseName="rel_company" inverseEntity="UserCeiba"/>
+    </entity>
+    <entity name="UserCeiba" representedClassName="UserCeiba" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <attribute name="website" optional="YES" attributeType="String"/>
+        <relationship name="rel_address" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AddressCeiba" inverseName="rel_user" inverseEntity="AddressCeiba"/>
+        <relationship name="rel_company" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CompanyCeiba" inverseName="rel_company" inverseEntity="CompanyCeiba"/>
+    </entity>
+    <elements>
+        <element name="AddressCeiba" positionX="-9" positionY="90" width="128" height="133"/>
+        <element name="CompanyCeiba" positionX="-36" positionY="54" width="128" height="103"/>
+        <element name="UserCeiba" positionX="-63" positionY="-18" width="128" height="163"/>
+    </elements>
+</model>
