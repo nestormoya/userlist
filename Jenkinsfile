@@ -5,10 +5,10 @@ pipeline {
   }
 
   //Opciones específicas de Pipeline dentro del Pipeline
-  options {
+  // options {
     // buildDiscarder(logRotator(numToKeepStr: '3'))
       // disableConcurrentBuilds()
-  }
+  // }
 
   //Una sección que define las herramientas “preinstaladas” en Jenkins
   // tools {
