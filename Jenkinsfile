@@ -17,7 +17,7 @@ pipeline {
   // }
 
   //Aquí comienzan los “items” del Pipeline
-  node('iOS Node'){
+  stages{
     stage('Checkout') {
       steps{
         echo "------------>Checkout<------------"
