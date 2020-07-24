@@ -54,7 +54,7 @@ pipeline {
     stage('Build') {
       steps {
         echo "------------>Build<------------"
-        sh 'xcodebuild -scheme "CeibaUser" -configuration "Debug" build test -destination "platform=iOS Simulator, name=iPhone 8"'
+        sh 'xcodebuild -scheme "CeibaUser" -configuration "Debug" build test -destination "platform=iOS Simulator, name=iPhone 6,OS=10.1" -enableCodeCoverage YES | /usr/local/bin/xcpretty -r junit'
       }
     }  
   }
